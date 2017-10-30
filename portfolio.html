@@ -6,85 +6,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Reset CSS from Meyersweb http://meyerweb.com/eric/tools/css/reset/reset.css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 	<!-- START NAV BAR -->
-	<nav>
-		<div class="container">
-			<h1 class="logo">Jamie David</h1>
-			<ul class="nav-tabs">
-				<li><a href="index.html">About</a></li>
-				<li class="nav-border"><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
+	<nav class="navbar navbar-default bg-white p-0">
+		<div class="container px-0">
+			<div class="navbar-header">
+				<h2 class="d-inline-block bg-info text-white p-3 m-0">Jamie David</h2>
+			</div>
+			<ul class="nav navbar-nav navbar-right nav-tabs d-inline border-0">
+				<li class="d-inline-block pr-4"><a class="text-secondary" href="#">About</a></li>
+				<li class="d-inline-block nav-border px-4"><a class="text-secondary" href="#">Portfolio</a></li>
+				<li class="d-inline-block pl-4"><a class="text-secondary" href="#">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
 	<!-- END NAV BAR -->
-	<!-- START CONTENT AREA -->
+	<!-- START CONTAINER -->
 	<div class="container">
-		<div class="content">
+		<!-- START CONTENT AREA -->
+		<div class="row my-3">
 			<!-- START MAIN CONTENT -->
-			<div class="main-section">
-				<h2>Portfolio</h2>
-				<div class="project-item left">
+			<div class="col-12 col-lg-7 mb-5 bg-white border">
+				<div class="page-header">
+					<h3 class="font-weight-bold text-info py-4 mb-3">Portfolio</h3>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 mb-3 position-relative">
+					<h6 class="position-absolute text-white text-center bg-info py-2">Club Template</h6>
 					<a href="http://www.jamiejdavid.com/portfolio.html#club-template" target="_blank">
-						<h5>Club Template</h5>
-						<div class="overlay"></div>
-						<img src="assets/images/clubtemplate.png" alt="UA Club Template Thumbnail">
+						<img class="img-fluid" src="assets/images/clubtemplate.png" alt="UA Club Template Thumbnail">
 					</a>
-				</div>
-				<div class="project-item right">
+					</div>
+					<div class="col-12 col-md-6 mb-3 position-relative">
+					<h6 class="position-absolute text-white text-center bg-info py-2">Lecture Notes</h6>
 					<a href="http://www.jamiejdavid.com/portfolio.html#lecturenote" target="_blank">
-						<h5>Lecture Notes</h5>
-						<div class="overlay"></div>
-						<img src="assets/images/lecturenote.jpg" alt="UA Lecture Notes Thumbnail">
+						<img class="img-fluid" src="assets/images/lecturenote.jpg" alt="UA Lecture Notes Thumbnail">
 					</a>
+					</div>
 				</div>
-				<div class="project-item left">
+				<div class="row">
+					<div class="col-12 col-md-6 mb-3 position-relative">
+					<h6 class="position-absolute text-white text-center bg-info py-2">Highway Self Storage</h6>
 					<a href="http://www.jamiejdavid.com/portfolio.html#hwy" target="_blank">
-						<h5>Highway Self Storage</h5>
-						<div class="overlay"></div>
-						<img src="assets/images/hwystorage.jpg" alt="Highway Self Storage Thumbnail">
+						<img class="img-fluid" src="assets/images/hwystorage.jpg" alt="Highway Self Storage Thumbnail">
 					</a>
-				</div>
-				<div class="project-item right">
+					</div>
+					<div class="col-12 col-md-6 mb-3 position-relative">
+					<h6 class="position-absolute text-white text-center bg-info py-2">Tennis Game</h6>
 					<a href="http://www.jamiejdavid.com/portfolio.html#tennis" target="_blank">
-						<h5>Tennis Game</h5>
-						<div class="overlay"></div>
-						<img src="assets/images/tennisgame.jpg" alt="Tennis Game Thumbnail">
+						<div class="overlay position-absolute h-100"></div>
+						<img class="img-fluid" src="assets/images/tennisgame.jpg" alt="Tennis Game Thumbnail">
 					</a>
+					</div>
 				</div>
-				<div class="project-item left">
+				<div class="row">
+					<div class="col-12 col-md-6 mb-3 position-relative">
+					<h6 class="position-absolute text-white text-center bg-info py-2">Previous Personal Website</h6>
 					<a href="http://www.jamiejdavid.com/portfolio.html#oldweb" target="_blank">
-						<h5>Previous Personal Website</h5>
-						<div class="overlay"></div>
-						<img src="assets/images/oldhome.jpg" alt="Previous Personal Website Thumbnail">
+						<img class="img-fluid" src="assets/images/oldhome.jpg" alt="Previous Personal Website Thumbnail">
 					</a>
+					</div>
 				</div>
 			</div>
 			<!-- END MAIN CONTENT -->
 			<!-- START SIDEBAR -->
-			<div class="sidebar">
-				<h3>Connect with Me</h3>
-				<a href="https://github.com/jjdavid14" target="_blank">
-					<img src="assets/images/if_github_287756.svg" alt="Github Icon">
-				</a>
-				<a href="https://www.linkedin.com/in/jjdavid14/" target="_blank">
-					<img src="assets/images/if_linkedin_287735.svg" alt="Linkedin Icon">
-				</a>
-				<a href="#">
-					<img src="assets/images/if_stackoverflow__287696.svg" alt="Stackoverflow Icon">
-				</a>
+			<div class="col-12 col-lg-4 offset-lg-1 p-0 mb-5">
+				<div class="card border">
+					<div class="card-body">
+						<h5 class="font-weight-bold text-info py-3 mb-3">Connect with Me</h5>
+						<a href="https://github.com/jjdavid14" target="_blank">
+							<img src="assets/images/if_github_287756.svg" alt="Github Icon">
+						</a>
+						<a href="https://www.linkedin.com/in/jjdavid14/" target="_blank">
+							<img src="assets/images/if_linkedin_287735.svg" alt="Linkedin Icon">
+						</a>
+						<a href="#">
+							<img src="assets/images/if_stackoverflow__287696.svg" alt="Stackoverflow Icon">
+						</a>
+					</div>
+				</div>
 			</div>
 			<!-- END SIDEBAR -->
 		</div>
+		<!-- END CONTENT AREA -->
 	</div>
-	<!-- END CONTENT AREA -->
+	<!-- END CONTAINER -->
 	<!-- START FOOTER -->
-	<footer>
-		&copy; Copyright 2017 Jamie David
+	<footer class="footer fixed-bottom bg-dark">
+		<div class="container">
+			<p class="text-center text-white py-2 m-0">
+				<small>&copy; Copyright 2017 Jamie David</small>
+			</p>
+		</div>
 	</footer>
 	<!-- END FOOTER -->
 </body>
