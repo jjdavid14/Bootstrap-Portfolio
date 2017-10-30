@@ -6,67 +6,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Reset CSS from Meyersweb http://meyerweb.com/eric/tools/css/reset/reset.css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 	<!-- START NAV BAR -->
-	<nav>
-		<div class="container">
-			<h1 class="logo">Jamie David</h1>
-			<ul class="nav-tabs">
-				<li><a href="index.html">About</a></li>
-				<li class="nav-border"><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
+	<nav class="navbar navbar-default bg-white p-0">
+		<div class="container px-0">
+			<div class="navbar-header">
+				<h2 class="d-inline-block bg-info text-white p-3 m-0">Jamie David</h2>
+			</div>
+			<ul class="nav navbar-nav navbar-right nav-tabs d-inline border-0">
+				<li class="d-inline-block pr-4"><a class="text-secondary" href="#">About</a></li>
+				<li class="d-inline-block nav-border px-4"><a class="text-secondary" href="#">Portfolio</a></li>
+				<li class="d-inline-block pl-4"><a class="text-secondary" href="#">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
 	<!-- END NAV BAR -->
-	<!-- START CONTENT AREA -->
+	<!-- START CONTAINER -->
 	<div class="container">
-		<div class="content">
+		<!-- START CONTENT AREA -->
+		<div class="row my-3">
 			<!-- START MAIN CONTENT -->
-			<div class="main-section">
-				<h2>Contact</h2>
+			<div class="col-12 col-lg-7 mb-5 bg-white border">
+				<div class="page-header">
+					<h3 class="font-weight-bold text-info py-4 mb-3">Contact</h3>
+				</div>
 				<form>
-					<label>
-						Name<br>
-						<input type="text" name="name" placeholder="Your Name">
-					</label>
-					<label>
-						Email<br>
-						<input type="text" name="email" placeholder="exampe@email.com">
-					</label>
-					<label>
-						Message<br>
-						<textarea></textarea>
-					</label>
-					<a href="#">
-						<div id="button">Submit</div>
-					</a>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" placeholder="example@email.com">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" placeholder="example@email.com">
+					</div>
+					<div class="form-group">
+						<label for="textarea">Message</label>
+						<textarea class="form-control" id="textarea" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn btn-info mb-2">Submit</button>
 				</form>
 			</div>
 			<!-- END MAIN CONTENT -->
 			<!-- START SIDEBAR -->
-			<div class="sidebar">
-				<h3>Connect with Me</h3>
-				<a href="https://github.com/jjdavid14" target="_blank">
-					<img src="assets/images/if_github_287756.svg" alt="Github Icon">
-				</a>
-				<a href="https://www.linkedin.com/in/jjdavid14/" target="_blank">
-					<img src="assets/images/if_linkedin_287735.svg" alt="Linkedin Icon">
-				</a>
-				<a href="#">
-					<img src="assets/images/if_stackoverflow__287696.svg" alt="Stackoverflow Icon">
-				</a>
+			<div class="col-12 col-lg-4 offset-lg-1 p-0 mb-5">
+				<div class="card border">
+					<div class="card-body">
+						<h5 class="font-weight-bold text-info py-3 mb-3">Connect with Me</h5>
+						<a href="https://github.com/jjdavid14" target="_blank">
+							<img src="assets/images/if_github_287756.svg" alt="Github Icon">
+						</a>
+						<a href="https://www.linkedin.com/in/jjdavid14/" target="_blank">
+							<img src="assets/images/if_linkedin_287735.svg" alt="Linkedin Icon">
+						</a>
+						<a href="#">
+							<img src="assets/images/if_stackoverflow__287696.svg" alt="Stackoverflow Icon">
+						</a>
+					</div>
+				</div>
 			</div>
 			<!-- END SIDEBAR -->
 		</div>
+		<!-- END CONTENT AREA -->
 	</div>
-	<!-- END CONTENT AREA -->
+	<!-- END CONTAINER -->
 	<!-- START FOOTER -->
-	<footer>
-		&copy; Copyright 2017 Jamie David
+	<footer class="footer fixed-bottom bg-dark">
+		<div class="container">
+			<p class="text-center text-white py-2 m-0">
+				<small>&copy; Copyright 2017 Jamie David</small>
+			</p>
+		</div>
 	</footer>
 	<!-- END FOOTER -->
 </body>

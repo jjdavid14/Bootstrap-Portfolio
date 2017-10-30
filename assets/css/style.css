@@ -91,39 +91,6 @@ nav {
 
 /* MAIN CONTENT - CONTACT */
 
-label {
-	display: block;
-	margin: 20px 0;
-}
-
-input, textarea {
-	margin-top: 10px;
-	width: 100%;
-	border: 1px solid #ddd;
-}
-
-input {
-	padding: 4px 8px;
-}
-
-textarea {
-	height: 100px;
-}
-
-#button:hover {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	color: #4aaaa5;
-}
-
-#button {
-	display: inline-block;
-	background-color: #4aaaa5;
-	border: 1px solid #4aaaa5;
-	color: #fff;
-	padding: 15px 30px;
-}
-
 /* SIDEBAR */
 
 /* FOOTER */
@@ -140,7 +107,6 @@ footer {
 	.col-lg-7 {
 		flex: 0 0 58.333333%;
 		max-width: 58.333333%;
-		margin-bottom: 3em!important;
 	}
 
 	.col-lg-4 {
