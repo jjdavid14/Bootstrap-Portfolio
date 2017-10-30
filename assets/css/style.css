@@ -136,4 +136,47 @@ footer {
 
 /* --------- MEDIA QUERIES --------- */
 
+@media (min-width: 980px) and (max-width: 1023px) {
+	.col-lg-7 {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+		margin-bottom: 3em!important;
+	}
 
+	.col-lg-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33%;
+	}
+
+	.offset-lg-1 {
+		margin-left: 8.333333%;
+	}
+
+	.img-thumbnail {
+		float: none!important;
+		width: 40%!important;
+		margin-left:28%!important;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar > .container {
+		max-width: 100%;
+	}
+
+	.navbar-header, h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	ul {
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+
+	.img-thumbnail {
+		float: none!important;
+		width: 40%!important;
+		margin-left:28%!important;
+	}
+}
