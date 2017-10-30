@@ -14,15 +14,15 @@
 </head>
 <body>
 	<!-- START NAV BAR -->
-	<nav class="navbar navbar-default p-0">
+	<nav class="navbar navbar-default bg-white p-0">
 		<div class="container px-0">
 			<div class="navbar-header">
-				<h1 class="logo m-0">Jamie David</h1>
+				<h2 class="d-inline-block bg-info text-white p-3 m-0">Jamie David</h2>
 			</div>
-			<ul class="nav navbar-nav navbar-right nav-tabs">
-				<li><a href="#">About</a></li>
-				<li class="nav-border"><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
+			<ul class="nav navbar-nav navbar-right nav-tabs d-inline border-0">
+				<li class="d-inline-block pr-4"><a class="text-secondary" href="#">About</a></li>
+				<li class="d-inline-block nav-border px-4"><a class="text-secondary" href="#">Portfolio</a></li>
+				<li class="d-inline-block pl-4"><a class="text-secondary" href="#">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -30,22 +30,48 @@
 	<!-- START CONTAINER -->
 	<div class="container">
 		<!-- START CONTENT AREA -->
-		<div class="row">
+		<div class="row mt-3">
 			<!-- START MAIN CONTENT -->
-
+			<div class="col-md-8 bg-white border">
+				<div class="page-header">
+					<h3 class="font-weight-bold text-info py-4 mb-3">About Me</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="assets/images/me.jpg" alt="Picture of Myself" class="img-thumbnail w-25 float-left mr-3">
+						<p>I am a student at The University of Arizona, where I am majoring in Computer Science and also minoring in Nutrition and Information Science/Technology. I currently work as a <u><a class="text-info" href="https://union.arizona.edu/" target="_blank">Web Developer</a></u> for the University of Arizona and am taking part in a rigorous 24 week Full Stack Flex Program offered by <u><a class="text-info" href="http://www.trilogyed.com/programs/web-development/" target="_blank">Trilogy Education Services Inc.</a></u></p>
+						<p>Apart from doing coursework from different computer science classes I am taking at The University of Arizona, I also spend my time outside of class practicing Android and Web Development by taking on various fun projects! In the midst of all this, I also manage to stay physically active. When I am not busy with school or work, you can find me in the Recreation Center playing basketball or working out. Check out my <u><a class="text-info" href="https://jjdavid14.github.io/favorite-animal/" target="_blank">Favorite Animal</a></u>.</p>
+					</div>
+				</div>
+			</div>
 			<!-- END MAIN CONTENT -->
 			<!-- START SIDEBAR -->
-
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="font-weight-bold text-info py-3 mb-3">Connect with Me</h5>
+						<a href="https://github.com/jjdavid14" target="_blank">
+							<img src="assets/images/if_github_287756.svg" alt="Github Icon">
+						</a>
+						<a href="https://www.linkedin.com/in/jjdavid14/" target="_blank">
+							<img src="assets/images/if_linkedin_287735.svg" alt="Linkedin Icon">
+						</a>
+						<a href="#">
+							<img src="assets/images/if_stackoverflow__287696.svg" alt="Stackoverflow Icon">
+						</a>
+					</div>
+				</div>
+			</div>
 			<!-- END SIDEBAR -->
-			<!-- END CONTENT AREA -->
 		</div>
+		<!-- END CONTENT AREA -->
 	</div>
 	<!-- END CONTAINER -->
 	<!-- START FOOTER -->
-	<footer class="footer fixed-bottom pt-3">
+	<footer class="footer fixed-bottom bg-dark pt-3">
 		<div class="container">
-			<p>
-				&copy; Copyright 2017 Jamie David
+			<p class="text-center text-white">
+				<small>&copy; Copyright 2017 Jamie David</small>
 			</p>
 		</div>
 	</footer>
